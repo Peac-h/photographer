@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply min-h-screen bg-black font-sans text-sm dark:bg-stone-950 dark:text-stone-400;
+  /* background: #0a180c; */
+}
