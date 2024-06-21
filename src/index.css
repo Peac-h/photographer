@@ -3,6 +3,18 @@
 @tailwind utilities;
 
 body {
-  @apply min-h-screen bg-black font-sans text-sm dark:bg-stone-950 dark:text-stone-400;
-  /* background: #0a180c; */
+  @apply bg-black font-sans text-xs leading-5 text-stone-500 dark:bg-stone-950;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+::selection {
+  @apply bg-stone-400 text-black;
+}
+
+.link {
+  @apply text-stone-400 underline decoration-stone-100 underline-offset-4 transition-all hover:underline hover:decoration-stone-500 dark:decoration-stone-800;
 }
