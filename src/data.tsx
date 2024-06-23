@@ -50,18 +50,6 @@ export type DataItemType = {
 
 export const data: DataItemType[] = [
   // Mountains
-  // {
-  //   id: 101,
-  //   link: "https://images.unsplash.com/photo-1669379399096-586a21020826?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  //   published: "November 25, 2022",
-  //   location: "Tsokalta",
-  //   camera: "Canon, EOS 2000D",
-  //   artist: "https://unsplash.com/@marishkunebi",
-  //   description:
-  //     "Tusheti (Georgian: თუშეთი, romanized: tusheti; Bats: თუშითა, romanized: tushita) is a historic region in northeast Georgia. A mountainous area, it is home to the Tusheti National Park. By the conventional definition of the Europe-Asia boundary as following the watershed of the Greater Caucasus, Tusheti is geographically a European part of Georgia.",
-  //   externalLink: "https://en.wikipedia.org/wiki/Tusheti",
-  //   group: "mountains",
-  // },
   {
     id: 102,
     link: "https://images.unsplash.com/photo-1538590888307-8417d434e15f?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -237,15 +225,15 @@ export const data: DataItemType[] = [
   // Gagra
   {
     id: 115,
-    link: "https://images.unsplash.com/photo-1633811758941-8b3ab3abfaf8?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    published: "October 10, 2021",
-    location: "Gagra, Abkhazia",
-    camera: "OnePlus, GM1910",
+    link: "https://images.unsplash.com/photo-1695037401087-de118b8786f6?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    published: "September 18, 2023",
+    location: "Sukhumi, Abkhazia",
+    camera: "Canon, EOS 6D Mark II",
     description:
-      "Gagra (Georgian: გაგრა; Abkhaz and Russian: Гагра) is a town in Abkhazia/Georgia, sprawling for 5 km on the northeast coast of the Black Sea, at the foot of the Caucasus Mountains. Its subtropical climate made Gagra a popular health resort in Imperial Russian and Soviet times. It had a population of 26,636 in 1989, but this has fallen considerably due to the ethnic cleansing of Georgians in Abkhazia and other demographic shifts during and after the War in Abkhazia (1992–93). Gagra is the centre of the district of the same name. It is located in the western part of Region of Abkhazia, and river Psou serves as a border with Krasnodar Krai of Russia. <br /> <br /> The political status of Abkhazia is disputed. Having unilaterally declared independence from Georgia in 1992, Abkhazia is formally recognised as an independent state by 5 UN member states (two other states previously recognised it but then withdrew their recognition), while the remainder of the international community recognizes it as as de jure Georgian territory. Georgia continues to claim the area as its own territory, designating it as Russian-occupied territory.",
-    artist: "https://unsplash.com/@abrizgalov",
+      "Sukhumi (see also other names) is a city in a wide bay on the Black Sea's eastern coast. It is both the capital and largest city of the Republic of Abkhazia, a partially recognised state that most countries consider a part of Georgia. The city has been controlled by Abkhazia since the Abkhazian war in 1992–93. The city, which has an airport, is a port, major rail junction and a holiday resort because of its beaches, sanatoriums, mineral-water spas and semitropical climate. It is also a member of the International Black Sea Club. <br/> <br/> Sukhumi's history can be traced to the 6th century BC, when it was settled by Greeks, who named it Dioscurias. During this time and the subsequent Roman period, much of the city disappeared under the Black Sea. The city was named Tskhumi when it became part of the Kingdom of Abkhazia and then the Kingdom of Georgia. Contested by local princes, it became part of the Ottoman Empire in the 1570s, where it remained until it was conquered by the Russian Empire in 1810.",
+    artist: "https://unsplash.com/@headofnarnia23",
     group: "abkhazia",
-    externalLink: "https://en.wikipedia.org/wiki/Gagra",
+    externalLink: "https://en.wikipedia.org/wiki/Sukhumi",
   },
   {
     id: 116,

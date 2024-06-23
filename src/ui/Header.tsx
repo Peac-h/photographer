@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export const Header = () => (
   <header className="min-w-80 whitespace-nowrap">
-    <div className="relative z-20 flex flex-col gap-4 p-4">
+    <div className="relative z-40 flex flex-col gap-4 p-4">
       <Link to="/">
         <h1>Tamta Lomidze</h1>
         <p>Front-End Developer</p>

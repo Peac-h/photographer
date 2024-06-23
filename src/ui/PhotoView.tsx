@@ -151,6 +151,7 @@ const ViewButtons = (props: {
   prevView: string;
   nextView: string;
   fillColor: string;
+  zIndex: string;
 }) => {
   const navigate = useNavigate();
   const isTouchDevice =
@@ -193,7 +194,7 @@ const ViewButtons = (props: {
   return (
     <>
       <button
-        className={`fixed left-0 top-2/4 z-30 h-full w-10 -translate-y-2/4 md:w-16 ${isTouchDevice ? "hidden" : ""}`}
+        className={`fixed left-0 top-2/4 ${props.zIndex} h-full w-10 -translate-y-2/4 md:w-16 ${isTouchDevice ? "hidden" : ""}`}
       >
         <Link
           to={props.prevView}
@@ -204,7 +205,7 @@ const ViewButtons = (props: {
       </button>
 
       <button
-        className={`fixed right-0 top-2/4 z-30 h-full w-10 -translate-y-2/4 md:w-16 ${isTouchDevice ? "hidden" : ""}`}
+        className={`fixed right-0 top-2/4 ${props.zIndex} h-full w-10 -translate-y-2/4 md:w-16 ${isTouchDevice ? "hidden" : ""}`}
       >
         <Link
           to={props.nextView}
@@ -230,6 +231,17 @@ export const PhotoView = () => {
       setPhoto(foundPhoto);
     }
   }, [photoId]);
+
+  // Toggle body scroll
+  useEffect(() => {
+    modalOpen
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "auto");
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [modalOpen]);
 
   return (
     <>
@@ -272,6 +284,7 @@ export const PhotoView = () => {
               ? "fill-stone-400 dark:fill-stone-700"
               : "fill-stone-300 dark:fill-stone-800"
           }
+          zIndex={modalOpen ? "z-50" : "z-30"}
         />
       </div>
 
