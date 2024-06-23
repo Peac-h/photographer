@@ -1,30 +1,24 @@
-# React + TypeScript + Vite
+# Photographer - Georgian Diaries
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project showcases the beauty, culture, and heritage of Georgia (საქართველო) through photography and stories. The website is developed with:
 
-Currently, two official plugins are available:
+- **Tailwind CSS** Utilized for styling.
+- **TypeScript** is employed for scripting.
+- **React** Chosen as the front-end framework.
+- **Vite** Integrated as the build tool.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The page is fully responsive, optimized for various devices and screen sizes.
 
-## Expanding the ESLint configuration
+## Checkout The Live Demo
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+[Link to Page]()
 
-- Configure the top-level `parserOptions` property like this:
+![Shopify Marketing Page - Desktop-top]()
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+![Shopify Marketing Page - Desktop-middle]()
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+![Shopify Marketing Page - Desktop-bottom]()
+
+## Author
+
+- [Portfolio](https://peachfolio.online/)
