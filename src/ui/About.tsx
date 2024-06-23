@@ -22,7 +22,7 @@ export const About = () => {
         This website is developed using Tailwind CSS for styling, TypeScript for
         scripting, React as the front-end framework, and Vite as the build tool.
         If you’re curious about my other projects, hit my{" "}
-        <a href="#" className="link" target="_blank">
+        <a href="https://peachfolio.online/" className="link" target="_blank">
           Portfolio
         </a>
         . If you’d like to, do not hesitate to drop a word about your thoughts
