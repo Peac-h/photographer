@@ -123,7 +123,7 @@ const Photo = (props: { link: string; handleClick: () => void }) => (
     alt="An image of Georgia"
     loading="lazy"
     decoding="async"
-    className={`cursor-pointer sm:max-w-2xl md:max-w-4xl xl2:max-w-full`}
+    className="cursor-pointer transition duration-200 ease-in-out hover:sepia sm:max-w-2xl md:max-w-4xl xl2:max-w-full"
     onClick={props.handleClick}
   />
 );

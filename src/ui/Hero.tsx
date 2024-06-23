@@ -91,12 +91,12 @@ const HeroAlbum = () => (
                     alt="An image of Georgia"
                     loading="lazy"
                     decoding="async"
-                    className="m-0 opacity-85 transition-opacity group-hover:opacity-100 sm:max-w-4xl md:absolute md:h-full md:w-full md:object-cover md:object-center"
+                    className="m-0 opacity-85 filter group-hover:sepia sm:max-w-4xl md:absolute md:h-full md:w-full md:object-cover md:object-center"
                     src={el.link}
                   />
                 </div>
 
-                <p className="link overflow-hidden text-ellipsis whitespace-nowrap group-hover:underline group-hover:decoration-stone-400 group-hover:dark:decoration-stone-500">
+                <p className="link overflow-hidden text-ellipsis whitespace-nowrap group-hover:underline group-hover:decoration-stone-400 dark:group-hover:decoration-stone-500">
                   <span className="text-stone-400 group-hover:text-stone-500 dark:text-stone-600">
                     {el.location} ― {el.published}
                   </span>
