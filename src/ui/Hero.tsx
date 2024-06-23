@@ -86,18 +86,18 @@ const HeroAlbum = () => (
               className="max-w-max md:max-w-full"
             >
               <div className="group flex cursor-pointer flex-col gap-2">
-                <div className="relative flex max-w-md flex-col items-end gap-8 bg-zinc-800 sm:max-w-lg md:aspect-4/3 md:h-full md:w-full md:flex-row md:overflow-hidden md:bg-zinc-800">
+                <div className="relative flex max-w-md flex-col items-end gap-8 bg-zinc-200 sm:max-w-lg md:aspect-4/3 md:h-full md:w-full md:flex-row md:overflow-hidden dark:bg-zinc-800">
                   <img
                     alt="An image of Georgia"
                     loading="lazy"
                     decoding="async"
-                    className="m-0 transition-opacity group-hover:opacity-40 sm:max-w-4xl md:absolute md:h-full md:w-full md:object-cover md:object-center"
+                    className="m-0 opacity-85 transition-opacity group-hover:opacity-100 sm:max-w-4xl md:absolute md:h-full md:w-full md:object-cover md:object-center"
                     src={el.link}
                   />
                 </div>
 
-                <p className="link overflow-hidden text-ellipsis whitespace-nowrap group-hover:underline group-hover:decoration-stone-500">
-                  <span className="text-stone-600">
+                <p className="link overflow-hidden text-ellipsis whitespace-nowrap group-hover:underline group-hover:decoration-stone-400 group-hover:dark:decoration-stone-500">
+                  <span className="text-stone-400 group-hover:text-stone-500 dark:text-stone-600">
                     {el.location} ― {el.published}
                   </span>
                 </p>

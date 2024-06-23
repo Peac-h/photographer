@@ -2,7 +2,7 @@ export const Modal = (props: { src: string; handleModal: () => void }) => {
   return (
     <div>
       <div
-        className="fixed left-0 top-0 z-10 min-h-screen min-w-full bg-stone-950 opacity-70"
+        className="fixed left-0 top-0 z-20 min-h-screen min-w-full bg-stone-300 opacity-80 dark:bg-stone-950 dark:opacity-70"
         onClick={props.handleModal}
       ></div>
 

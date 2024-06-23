@@ -134,7 +134,7 @@ const Icon = (props: { fillColor: string; direction: "left" | "right" }) => (
     height="31px"
     width="31px"
     viewBox="0 -960 960 960"
-    fill={props.fillColor}
+    className={props.fillColor}
   >
     {props.direction === "left" ? (
       <path
@@ -267,7 +267,11 @@ export const PhotoView = () => {
         <ViewButtons
           prevView={prevView}
           nextView={nextView}
-          fillColor={modalOpen ? "rgb(87 83 78)" : "rgb(41 37 36)"}
+          fillColor={
+            modalOpen
+              ? "fill-stone-400 dark:fill-stone-700"
+              : "fill-stone-300 dark:fill-stone-800"
+          }
         />
       </div>
 

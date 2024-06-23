@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-stone-950 font-sans text-xs leading-5 text-stone-500;
+  @apply bg-stone-100 font-sans text-xs leading-5 text-stone-700 dark:bg-stone-950 dark:font-normal dark:text-stone-500;
 }
 
 body::-webkit-scrollbar {
@@ -12,9 +12,9 @@ body::-webkit-scrollbar {
 }
 
 ::selection {
-  @apply bg-stone-400 text-black;
+  @apply bg-stone-950 text-stone-500 dark:bg-stone-100 dark:text-stone-700;
 }
 
 .link {
-  @apply text-stone-400 underline decoration-stone-800 underline-offset-4 transition-all hover:underline hover:decoration-stone-500;
+  @apply text-stone-400 underline decoration-stone-300 underline-offset-4 transition-all hover:underline hover:decoration-stone-500 dark:text-stone-400 dark:decoration-stone-800 hover:dark:decoration-stone-500;
 }

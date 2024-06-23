@@ -50,18 +50,18 @@ export type DataItemType = {
 
 export const data: DataItemType[] = [
   // Mountains
-  {
-    id: 101,
-    link: "https://images.unsplash.com/photo-1669379399096-586a21020826?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    published: "November 25, 2022",
-    location: "Tsokalta",
-    camera: "Canon, EOS 2000D",
-    artist: "https://unsplash.com/@marishkunebi",
-    description:
-      "Tusheti (Georgian: თუშეთი, romanized: tusheti; Bats: თუშითა, romanized: tushita) is a historic region in northeast Georgia. A mountainous area, it is home to the Tusheti National Park. By the conventional definition of the Europe-Asia boundary as following the watershed of the Greater Caucasus, Tusheti is geographically a European part of Georgia.",
-    externalLink: "https://en.wikipedia.org/wiki/Tusheti",
-    group: "mountains",
-  },
+  // {
+  //   id: 101,
+  //   link: "https://images.unsplash.com/photo-1669379399096-586a21020826?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  //   published: "November 25, 2022",
+  //   location: "Tsokalta",
+  //   camera: "Canon, EOS 2000D",
+  //   artist: "https://unsplash.com/@marishkunebi",
+  //   description:
+  //     "Tusheti (Georgian: თუშეთი, romanized: tusheti; Bats: თუშითა, romanized: tushita) is a historic region in northeast Georgia. A mountainous area, it is home to the Tusheti National Park. By the conventional definition of the Europe-Asia boundary as following the watershed of the Greater Caucasus, Tusheti is geographically a European part of Georgia.",
+  //   externalLink: "https://en.wikipedia.org/wiki/Tusheti",
+  //   group: "mountains",
+  // },
   {
     id: 102,
     link: "https://images.unsplash.com/photo-1538590888307-8417d434e15f?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
