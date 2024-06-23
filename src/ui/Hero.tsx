@@ -73,7 +73,7 @@ const HeroParagraph = () => (
 );
 
 const HeroAlbum = () => (
-  <div className="flex flex-col gap-4 md:p-4">
+  <div className="flex flex-col gap-12 md:gap-4 md:p-4">
     {Object.values(gallery).map((data, i) => (
       <div className="flex flex-row gap-8" key={i}>
         <h2 className="hidden min-w-4 md:flex">{georgianAlphabet[i]}</h2>

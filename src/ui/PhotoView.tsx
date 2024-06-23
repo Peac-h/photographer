@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import { DataItemType, data } from "../data";
 import { Modal } from "./Modal";
 
@@ -151,27 +151,71 @@ const ViewButtons = (props: {
   prevView: string;
   nextView: string;
   fillColor: string;
-}) => (
-  <>
-    <button className="fixed left-0 top-2/4 z-30 h-full w-10 -translate-y-2/4 md:w-16">
-      <Link
-        to={props.prevView}
-        className="flex h-full items-center justify-center"
-      >
-        <Icon fillColor={props.fillColor} direction="left" />
-      </Link>
-    </button>
+}) => {
+  const navigate = useNavigate();
+  const isTouchDevice =
+    "ontouchstart" in window || navigator.maxTouchPoints > 0;
 
-    <button className="fixed right-0 top-2/4 z-30 h-full w-10 -translate-y-2/4 md:w-16">
-      <Link
-        to={props.nextView}
-        className="flex h-full items-center justify-center"
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      event.key === "ArrowLeft" && navigate(props.prevView);
+      event.key === "ArrowRight" && navigate(props.nextView);
+    };
+
+    let startX: number | null = null;
+
+    const handleTouchStart = (event: TouchEvent) => {
+      startX = event.touches[0].clientX;
+    };
+
+    const handleTouchEnd = (event: TouchEvent) => {
+      if (startX !== null) {
+        const endX = event.changedTouches[0].clientX;
+
+        startX - endX > 50 && navigate(props.nextView);
+        endX - startX > 50 && navigate(props.prevView);
+
+        startX = null;
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    window.addEventListener("touchstart", handleTouchStart);
+    window.addEventListener("touchend", handleTouchEnd);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchend", handleTouchEnd);
+    };
+  }, [navigate, props.prevView, props.nextView]);
+
+  return (
+    <>
+      <button
+        className={`fixed left-0 top-2/4 z-30 h-full w-10 -translate-y-2/4 md:w-16 ${isTouchDevice ? "hidden" : ""}`}
       >
-        <Icon fillColor={props.fillColor} direction="right" />
-      </Link>
-    </button>
-  </>
-);
+        <Link
+          to={props.prevView}
+          className="flex h-full items-center justify-center"
+        >
+          <Icon fillColor={props.fillColor} direction="left" />
+        </Link>
+      </button>
+
+      <button
+        className={`fixed right-0 top-2/4 z-30 h-full w-10 -translate-y-2/4 md:w-16 ${isTouchDevice ? "hidden" : ""}`}
+      >
+        <Link
+          to={props.nextView}
+          className="flex h-full items-center justify-center"
+        >
+          <Icon fillColor={props.fillColor} direction="right" />
+        </Link>
+      </button>
+    </>
+  );
+};
 
 export const PhotoView = () => {
   const { photoId } = useParams();
