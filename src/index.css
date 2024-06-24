@@ -16,5 +16,5 @@ body::-webkit-scrollbar {
 }
 
 .link {
-  @apply text-stone-400 underline decoration-stone-300 underline-offset-4 transition-all duration-100 ease-in-out hover:underline hover:decoration-stone-500 dark:text-stone-400 dark:decoration-stone-800 hover:dark:decoration-stone-500;
+  @apply text-stone-400 underline decoration-stone-300 underline-offset-4 transition-all duration-100 ease-in-out hover:underline hover:decoration-stone-400 dark:text-stone-400 dark:decoration-stone-800 hover:dark:decoration-stone-500;
 }
