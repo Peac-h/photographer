@@ -2,7 +2,7 @@ export const About = () => {
   return (
     <div className="flex max-w-xs flex-col gap-6 p-4 sm:max-w-sm md:max-w-lg">
       <p>
-        Hello there! I'm <span className="text-stone-400">Tamta</span>, a
+        Hello there! I'm <span className="text-stone-500">Tamta</span>, a
         front-end developer at{" "}
         <a href="https://www.videowindow.eu/" className="link">
           Videowindow

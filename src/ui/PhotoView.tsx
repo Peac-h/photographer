@@ -123,7 +123,7 @@ const Photo = (props: { link: string; handleClick: () => void }) => (
     alt="An image of Georgia"
     loading="lazy"
     decoding="async"
-    className="cursor-pointer transition duration-200 ease-in-out hover:sepia sm:max-w-2xl md:max-w-4xl xl2:max-w-full"
+    className="cursor-pointer transition duration-200 ease-in-out sm:max-w-2xl md:max-w-4xl xl2:max-w-full"
     onClick={props.handleClick}
   />
 );
@@ -281,8 +281,8 @@ export const PhotoView = () => {
           nextView={nextView}
           fillColor={
             modalOpen
-              ? "fill-stone-400 dark:fill-stone-700"
-              : "fill-stone-300 dark:fill-stone-800"
+              ? "fill-stone-400 dark:fill-stone-600"
+              : "fill-stone-300 dark:fill-stone-700"
           }
           zIndex={modalOpen ? "z-50" : "z-30"}
         />

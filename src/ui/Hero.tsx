@@ -97,7 +97,7 @@ const HeroAlbum = () => (
                 </div>
 
                 <p className="link overflow-hidden text-ellipsis whitespace-nowrap group-hover:underline group-hover:decoration-stone-400 dark:group-hover:decoration-stone-500">
-                  <span className="text-stone-400 group-hover:text-stone-500 dark:text-stone-600">
+                  <span className="text-stone-500 group-hover:text-stone-600 dark:text-stone-600">
                     {el.location} ― {el.published}
                   </span>
                 </p>

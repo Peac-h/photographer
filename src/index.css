@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-stone-100 font-sans text-xs leading-5 text-stone-700 dark:bg-stone-950 dark:font-normal dark:text-stone-500;
+  @apply bg-stone-100 font-sans text-xs leading-5 text-stone-950 dark:bg-stone-950 dark:text-stone-500 xl:dark:font-medium;
 }
 
 body::-webkit-scrollbar {
@@ -16,5 +16,5 @@ body::-webkit-scrollbar {
 }
 
 .link {
-  @apply text-stone-400 underline decoration-stone-300 underline-offset-4 transition-all duration-100 ease-in-out hover:underline hover:decoration-stone-400 dark:text-stone-400 dark:decoration-stone-800 hover:dark:decoration-stone-500;
+  @apply text-stone-500 underline decoration-stone-300 underline-offset-4 transition-all duration-100 ease-in-out hover:underline hover:decoration-stone-400 dark:text-stone-400 dark:decoration-stone-800 hover:dark:decoration-stone-500;
 }
